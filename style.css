@@ -1,0 +1,156 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+  --Dark-Blue-grad: hsl(213, 6%, 28%);
+  --Orange: hsl(25, 97%, 53%);
+  --Font-size-paragraph: 15px;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Very-Dark-Blue);
+  color: #fff;
+  display: grid;
+  place-content: center;
+  font-family: "Overpass", sans-serif;
+}
+
+h1 {
+  font-family: "Overpass", sans-serif;
+}
+
+.main-container img {
+  background-color: var(--Dark-Blue-grad);
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  line-height: 1.6;
+  color: var(--Light-Grey);
+  font-size: var(--Font-size-paragraph);
+}
+
+.main-container {
+  background-color: var(--Dark-Blue);
+  margin: 2rem;
+  padding: 1.5rem;
+  display: grid;
+  gap: 1.2rem;
+  border-radius: 10px;
+  max-width: 400px;
+}
+
+ul,
+li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.numb {
+  background-color: var(--Dark-Blue-grad);
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  border: none;
+}
+
+.btn {
+  border: none;
+  background-color: var(--Orange);
+  padding: 10px;
+  border-radius: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 2.5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: var(--Orange);
+  cursor: pointer;
+  transition: 1s;
+}
+
+.numb:hover {
+  background-color: var(--Orange);
+}
+
+.numb:focus {
+  background-color: var(--Medium-Grey);
+}
+
+/* Thank you */
+
+.second-container {
+  background-color: var(--Dark-Blue);
+  margin: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  text-align: center;
+  border-radius: 10px;
+  max-width: 400px;
+}
+
+h2 {
+  font-family: "Overpass", sans-serif;
+}
+
+p.second {
+  background-color: var(--Dark-Blue-grad);
+  color: var(--Orange);
+  border-radius: 10px;
+  padding: 0.2rem 0.6rem 0rem;
+  font-size: 12px;
+  font-size: var(--Font-size-paragraph);
+}
+
+.second-container img {
+  display: block;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
